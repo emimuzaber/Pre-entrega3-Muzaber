@@ -1,0 +1,81 @@
+.header{
+    background-color:black;
+    display: block;
+}
+
+.footer{
+    background-color:black;
+    display: block;
+}
+
+.text-footer{
+    font-style: italic;
+    color: white;
+    text-align: center;  
+}
+
+
+.titular{
+    font-style: italic;
+    color: white;
+    text-align: center;
+}
+.estadio {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    border: 2px solid #000;
+    
+    
+}
+
+.sector-1{
+    grid-column: span 1;
+    grid-row: span 2;
+}
+.sector-2{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.sector-3{
+    grid-column: span 1;
+    grid-row: span 2;
+}
+.sector-4{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.sector-5{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.sector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.sector-1 { background-color: lightblue; }
+.sector-2 { background-color: lightgreen; }
+.sector-3 { background-color: lightcoral; }
+.sector-4 { background-color: lightgoldenrodyellow; }
+.sector-5 { background-color: lightpink; }
+
+@media (max-width: 480px) {
+    .estadio {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        width: 100%;
+        height: auto;
+    }
+
+    .sector {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
